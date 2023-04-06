@@ -1,46 +1,42 @@
 <!DOCTYPE html>
 <html lang="ja">
-
  <head>
- <meta charset="utf-8">
- <title></title>
- <meta name="description" content="ディスクリプションを入力">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link rel="stylesheet" href="style.css">
- <!-- [if lt IE 9] -->
- <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
- <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
- <!-- [endif] -->
- <script src="main.js"></script>
-
- <style>
-    p{
-      text-align:center;
-    }
-  </style>
+   <meta charset="utf-8">
+   <title></title>
+   <meta name="description" content="ディスクリプションを入力">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <!-- [if lt IE 9] -->
+   <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+   <script src="https://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+   <!-- [endif] -->
+   <script src="main.js"></script>
+   <style>
+     p{
+       text-align:center;
+     }
+   </style>
  </head>
- 
- 
  <body>
-	<h1>数値入力</h1>
-	<form>
-		<label for="input-number">数値を入力してください:</label>
-		<input type="number" id="input-number" name="input-number">
-		<button type="button" onclick="redirectToPage()">送信</button>
-	</form>
-	<script>
-		function redirectToPage() {
-			// 入力された値を取得する
-			var inputNumber = document.getElementById("input-number").value;
-			// 数値に一致するページに遷移する
-			if (inputNumber === "1") {
-				window.location.href = "dumhp_p2.html";
-			} else if (inputNumber === "2") {
-				window.location.href = "dumhp_p5.html";
-			} else {
-				window.alert("該当するページが見つかりませんでした。");
-			}
-		}
-	</script>
-</body>
+   <h1>数値入力</h1>
+   <form>
+     <label for="input-number">数値を入力してください:</label>
+     <input type="number" id="input-number" name="input-number">
+     <button type="button" onclick="redirectToPage()">送信</button>
+   </form>
+   <script>
+     function redirectToPage() {
+       // 入力された値を取得する
+       var inputNumber = document.getElementById("input-number").value;
+       // 数値に一致するページに遷移する
+       if (inputNumber === "1") {
+         window.location.href = "dumhp_p2.html";
+       } else if (inputNumber === "2") {
+         window.location.href = "dumhp_p5.html";
+       } else {
+         window.alert("該当するページが見つかりませんでした。");
+       }
+     }
+   </script>
+ </body>
 </html>
