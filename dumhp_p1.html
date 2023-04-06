@@ -22,15 +22,25 @@
  
  
  <body>
- 
- <article>
- <h1>タイトル</h1>
- <section>
- <h2>見出し２</h2>
- <p>Are you the captain of KUMTC?</p>
- </section>
- </article>
- 
- 
- </body>
+	<h1>数値入力</h1>
+	<form>
+		<label for="input-number">数値を入力してください:</label>
+		<input type="number" id="input-number" name="input-number">
+		<button type="button" onclick="redirectToPage()">送信</button>
+	</form>
+	<script>
+		function redirectToPage() {
+			// 入力された値を取得する
+			var inputNumber = document.getElementById("input-number").value;
+			// 数値に一致するページに遷移する
+			if (inputNumber === "1") {
+				window.location.href = "page1.html";
+			} else if (inputNumber === "2") {
+				window.location.href = "page2.html";
+			} else {
+				window.alert("該当するページが見つかりませんでした。");
+			}
+		}
+	</script>
+</body>
 </html>
