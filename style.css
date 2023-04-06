@@ -1,0 +1,12 @@
+h1{
+    padding: 4px 0px;
+    text-align: center;
+    /*background: blue;
+    color: white;*/
+  }
+  .full-width{
+    /* 次の2行を追加 */
+    margin: 5px calc(50% - 50vw) 15px;
+    width: 100vw;
+  }
+  
