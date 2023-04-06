@@ -13,15 +13,15 @@
 
    <p>What is the value of Mr. Takeda's eyesight?</p>
    <form>
-     <label for="input-number">数値を入力してください:</label>
+     <label for="input-number">Enter your answer and click the Submit button:</label>
      <input type="number" id="input-number" name="input-number">
-     <button type="button" onclick="redirectToPage()">送信</button>
+     <button type="button" onclick="redirectToPage()">Submit</button>
    </form>
 
    <script>
         function redirectToPage() {
         var inputNumber = document.getElementById("input-number").value;
-        if (inputNumber == 1) {
+        if (inputNumber == 2) {
             window.location.href = "dumhp_p2.html";
         } else {
             window.location.href = "dumhp_p2.html";
