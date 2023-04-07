@@ -1,8 +1,17 @@
-/* CSSコード */
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap')
+@charset "utf-8";
 
-body {
-    font-family: Courier, monospace;
+body{
+    background-color: black;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+	color: #fff;
+	font-size:1rem;
+	line-height:1.85;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%; 
+	word-wrap: break-word;
 }
 
 p {
