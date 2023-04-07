@@ -1,4 +1,9 @@
+/* CSSコード */
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
 
+body {
+  font-family: 'Sacramento', cursive;
+}
 
 p {
   text-align:center;
