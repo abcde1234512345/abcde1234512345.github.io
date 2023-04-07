@@ -23,6 +23,7 @@ div.hoge_button {
 }
 
 .msg {
+    text-align:center;
     font-size: xx-large;
     background: blue;
     /*color: red;*/
