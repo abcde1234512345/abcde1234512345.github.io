@@ -24,11 +24,12 @@ div.labeldiv {
 
 div.hoge_button {
     text-align:center;
+    display:block;
 }
 
 .msg {
     text-align:center;
     font-size: xx-large;
-    background: blue;
-    /*color: red;*/
+    background:blue;
+    /*color:red;*/
 }
