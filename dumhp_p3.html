@@ -19,6 +19,13 @@
    </form>
 
    <script>
+    function handleSubmit(event) {
+      event.preventDefault();
+      redirectToPage();
+    }
+   </script>
+
+   <script>
         function redirectToPage() {
         var inputNumber = document.getElementById("input-number").value;
         if (inputNumber == 2) {
