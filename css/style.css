@@ -6,9 +6,8 @@ h1 {
     text-align:center; 
 }
 
-button {
+div.hoge_button {
     text-align:center;
-    align-items: center; 
 }
 
 .msg {
