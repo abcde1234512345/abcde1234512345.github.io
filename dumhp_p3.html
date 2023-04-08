@@ -1,51 +1,60 @@
 <!DOCTYPE html>
 <html lang="ja">
-
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title></title>
-    <meta name="description" content="ディスクリプションを入力">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/8-10.css">
+    <meta name="description" content="ディスクリプションを入力" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/8-10.css" />
   </head>
 
- <body>
-   <h1 class="TextTyping">Really?</h1>
-   <h2 class="TextTyping">If you really are the captain of KUMTC, you can solve the following problem.</h2>
+  <body>
+    <h1 class="TextTyping">Really?</h1>
+    <h2 class="TextTyping">
+      If you really are the captain of KUMTC, you can solve the following
+      problem.
+    </h2>
 
-   <br>
-   <h3 class="TextTyping">What is the value of Mr. Takeda's eyesight?</h3>
-   <form onsubmit="handleSubmit(event)">
-    <div class="labeldiv">
-      <label class="TextTyping" for="input-number">Enter your answer and click the Submit button:</label>
-     <input type="number" id="input-number" name="input-number" step="0.1">
-    </div>
-     <div class="hoge_button">
-      <button  class="TextTyping" type="button" onclick="redirectToPage()">Submit</button>
-     </div>
-   </form>
+    <br />
+    <h3 class="TextTyping">What is the value of Mr. Takeda's eyesight?</h3>
+    <form onsubmit="handleSubmit(event)">
+      <div class="labeldiv">
+        <label class="TextTyping" for="input-number"
+          >Enter your answer and click the Submit button:</label
+        >
+        <input type="number" id="input-number" name="input-number" step="0.1" />
+      </div>
+      <div class="hoge_button">
+        <button class="TextTyping" type="button" onclick="redirectToPage()">
+          Submit
+        </button>
+      </div>
+    </form>
 
-   
-   <script>
-    function handleSubmit(event) {
-      //console.log("起動24708235798357284349832y81\n92y48934y3217\n5t23784ryd38ん46trbs7463うjfw4yい58c7xf87xせ46trm8いm34w98x3tじmy845smxgh94w5いx，g598えfmy←み47えんxgzsみf8x347b76x6xb346rぃ254‥9t5g，くdrmyぅycrねmxfshぬzxcvbんm，あsdfghjkqうぇrちゅい23456789");
-      event.preventDefault();
-      redirectToPage();
-    }
-   </script>
+    <script>
+      function handleSubmit(event) {
+        //console.log("起動24708235798357284349832y81\n92y48934y3217\n5t23784ryd38ん46trbs7463うjfw4yい58c7xf87xせ46trm8いm34w98x3tじmy845smxgh94w5いx，g598えfmy←み47えんxgzsみf8x347b76x6xb346rぃ254‥9t5g，くdrmyぅycrねmxfshぬzxcvbんm，あsdfghjkqうぇrちゅい23456789");
+        event.preventDefault();
+        redirectToPage();
+      }
+    </script>
 
-   <script>
-        function redirectToPage() {
+    <script>
+      function redirectToPage() {
         var inputNumber = document.getElementById("input-number").value;
         if (inputNumber == 2) {
-            window.location.href = "dumhp_p5.html";
+          window.location.href = "dumhp_p5.html";
         } else {
-            window.location.href = "dumhp_p4.html";
+          window.location.href = "dumhp_p4.html";
         }
-        }
-   </script>
-   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-   <script src="js/8-10.js"></script>
- </body>
+      }
+    </script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/8-10.js"></script>
+  </body>
 </html>
