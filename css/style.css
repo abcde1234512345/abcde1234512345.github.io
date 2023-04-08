@@ -57,3 +57,7 @@ div.hoge_button {
     background:blue;
     /*color:red;*/
 }
+
+.lastbody {
+    text-transform: none;
+}
