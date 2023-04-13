@@ -8,17 +8,21 @@
     <link rel="stylesheet" type="text/css" href="../css/style.css" />
     <link rel="stylesheet" type="text/css" href="../css/8-10.css" />
 
-    <audio id="my-audio" controls volume="0.5">
+    <audio id="my-audio" controls autoplay volume="0.5">
       <source src="../mp3/keyboard.mp3" type="audio/mpeg" />
     </audio>
 
     <script>
       const audio = document.getElementById("my-audio");
-      audio.volume = 0.5; // 音量を設定する場合
       audio.currentTime = 1; // 1秒から再生を開始する場合
-      audio.play().catch((error) => {
-        // 自動再生が失敗した場合にバックアップ処理を行う
-        console.log(error);
+      audio.addEventListener("loadedmetadata", function () {
+        audio.play();
+        setTimeout(function () {
+          audio.pause();
+        }, 5000); // 5秒で再生を停止する場合
+      });
+      audio.addEventListener("error", function () {
+        console.error("Failed to play audio.");
       });
     </script>
   </head>
